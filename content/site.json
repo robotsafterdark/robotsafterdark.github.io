@@ -1,0 +1,9 @@
+{
+  "about": "Welcome to my little corner of the internet. This place is for robots, books, games, stories, photographs, and whatever else I find worth keeping. The computer is old, but somebody is still home.",
+  "journal": [{"date":"2026-11-12","title":"System boot","text":"Robots After Dark.exe is online. The workshop lights are on, and the archive is still mostly empty. That seems like a good beginning."}],
+  "junkyard": [{"title":"Workshop log #001","text":"Robotics projects and experiments will live here. Expect wires, wheels, questionable decisions and occasional success."}],
+  "archive": [{"title":"The archive is open","text":"Books, comics, games and films worth remembering will be catalogued here."}],
+  "stories": [{"title":"Unmapped worlds","text":"A shelf for fiction, characters, unfinished universes and things that might become stories."}],
+  "photos": [{"title":"Photo drawer","text":"Cats, quiet places and fragments of ordinary life. Photos coming soon."}],
+  "recycle": [{"title":"Nothing is ever really deleted","text":"Odds and ends, curiosities and things that don't fit anywhere else."}]
+}
