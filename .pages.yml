@@ -1,0 +1,39 @@
+
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: site
+    label: Website content
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: about
+        label: About text
+        type: text
+
+      - name: journal
+        label: Journal entries
+        type: object
+        list: true
+        fields:
+          - { name: date, label: Date, type: date }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: image, label: Image path, type: string, required: false }
+
+      - name: junkyard
+        label: Junkyard
+        type: object
+        list: true
+        fields: &entries
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: image, label: Image path, type: string, required: false }
+
+      - { name: archive, label: Archive, type: object, list: true, fields: *entries }
+      - { name: stories, label: Stories and Worlds, type: object, list: true, fields: *entries }
+      - { name: photos, label: Photos, type: object, list: true, fields: *entries }
+      - { name: recycle, label: Recycle Bin, type: object, list: true, fields: *entries }
