@@ -3,37 +3,14 @@
   "journal": [
     {
       "date": "2026-11-12",
-      "title": "System boot",
-      "text": "Robots After Dark.exe is online."
-    }
-  ],
-  "junkyard": [
-    {
-      "title": "Workshop log #001"
+      "title": "November 12, 2026",
+      "text": "Jurnal entries coming."
     }
   ],
   "archive": [
     {
       "title": "The archive is open",
       "text": "Books, games and films worth remembering will be catalogued here."
-    }
-  ],
-  "stories": [
-    {
-      "title": "Unmapped worlds",
-      "text": "A shelf for fiction, characters, unfinished universes and other stuff."
-    }
-  ],
-  "photos": [
-    {
-      "title": "Photo drawer",
-      "text": "Cats, quiet places and fragments of ordinary life. Photos coming soon."
-    }
-  ],
-  "recycle": [
-    {
-      "title": "Nothing is ever really deleted",
-      "text": "Odds, curiosities and things that don't fit anywhere else."
     }
   ]
 }
