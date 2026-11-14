@@ -1,39 +1,49 @@
-
 media:
   input: assets/uploads
   output: /assets/uploads
 
 content:
-  - name: site
-    label: Website content
+  - name: posts
+    label: Posts
     type: file
-    path: content/site.json
+    path: content/posts.json
     format: json
     fields:
-      - name: about
-        label: About text
-        type: text
-
-      - name: journal
-        label: Journal entries
+      - name: posts
+        label: All posts
         type: object
         list: true
         fields:
-          - { name: date, label: Date, type: date }
-          - { name: title, label: Title, type: string }
-          - { name: text, label: Text, type: text }
-          - { name: image, label: Image path, type: string, required: false }
-
-      - name: junkyard
-        label: Junkyard
-        type: object
-        list: true
-        fields: &entries
-          - { name: title, label: Title, type: string }
-          - { name: text, label: Text, type: text }
-          - { name: image, label: Image path, type: string, required: false }
-
-      - { name: archive, label: Archive, type: object, list: true, fields: *entries }
-      - { name: stories, label: Stories and Worlds, type: object, list: true, fields: *entries }
-      - { name: photos, label: Photos, type: object, list: true, fields: *entries }
-      - { name: recycle, label: Recycle Bin, type: object, list: true, fields: *entries }
+          - name: id
+            label: Unique ID (e.g. first-story)
+            type: string
+          - name: section
+            label: Section
+            type: select
+            options:
+              values:
+                - value: elsewhere
+                  label: Elsewhere
+                - value: earth
+                  label: Life on Earth
+          - name: date
+            label: Date
+            type: date
+          - name: title
+            label: Headline
+            type: string
+          - name: body
+            label: Body
+            type: text
+          - name: image
+            label: Image path (optional)
+            type: string
+            required: false
+          - name: image_alt
+            label: Image description (optional)
+            type: string
+            required: false
+          - name: tags
+            label: Tags (comma-separated, e.g. Books, Games)
+            type: string
+            required: false
