@@ -1,5 +1,13 @@
-Homepage switch: Life on Earth = index.html; Elsewhere = earth.html.
-Copy index.html, earth.html, archive.html and script.js to the repository root, replacing those four files.
-Do not replace content/posts.json or any image uploads.
-Commit and push in GitHub Desktop.
-Existing links to earth.html now open Elsewhere; use index.html for Life on Earth.
+Robots After Dark — corrected navigation
+========================================
+Homepage: index.html -> Life on Earth
+Fiction: elsewhere.html -> Elsewhere
+Archive: archive.html -> Archive
+
+1. In GitHub Desktop, Fetch origin and Pull origin if offered.
+2. Copy these four files into your repository root, replacing existing files.
+3. DELETE the obsolete earth.html from your repository root.
+4. Leave content/posts.json, .pages.yml, images, and style.css untouched.
+5. Commit to main, Push origin, and hard refresh your browser.
+
+All links, page section identifiers and Archive links have been checked.
